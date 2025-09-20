@@ -72,11 +72,25 @@ const { title, description, meta_title, image } = contact.data;
   </section>
 
   <script>
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-      if (typeof grecaptcha !== 'undefined' && grecaptcha.getResponse() === '') {
+    function onSubmit(e) {
+      if (typeof grecaptcha !== 'undefined') {
+        var response = grecaptcha.getResponse();
+        if (response.length === 0) {
+          e.preventDefault();
+          alert('Please complete the reCAPTCHA challenge before submitting the form.');
+          return false;
+        }
+      } else {
         e.preventDefault();
-        alert('Please complete the reCAPTCHA challenge before submitting the form.');
+        alert('reCAPTCHA is not loaded yet. Please wait and try again.');
         return false;
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var form = document.getElementById('contact-form');
+      if (form) {
+        form.addEventListener('submit', onSubmit);
       }
     });
   </script>

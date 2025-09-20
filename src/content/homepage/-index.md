@@ -1,13 +1,13 @@
 ---
 # Banner
 banner:
-  title: "The Ultimate Starter Template You Need To Start Your Astro Project"
-  content: "Astroplate is a free starter template built with Astro and TailwindCSS, providing everything you need to jumpstart your Astro project and save valuable time."
+  title: "Tu Negocio no Necesita Más Esfuerzo. Necesita Estrategia IA."
+  content: "Soy Eloy Chavez, un tecnólogo dedicado a la optimización radical de proyectos mediante la Inteligencia Artificial. Mi trabajo es simple: eliminar la fricción, reducir costos operativos y escalar tus resultados transformando datos complejos en ventajas accionables. Si buscas una hoja de ruta clara para integrar la IA y asegurar un crecimiento exponencial, has llegado al lugar correcto."
   image: "/images/banner.png"
   button:
     enable: true
-    label: "Get Started For Free"
-    link: "https://github.com/zeon-studio/astroplate"
+    label: "Agendar Estrategia IA"
+    link: "https://calendly.com/eloychavezdev/30min"
 
 # Features
 features:

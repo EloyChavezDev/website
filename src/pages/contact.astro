@@ -61,6 +61,9 @@ const { title, description, meta_title, image } = contact.data;
                 placeholder="Message goes here..."
                 rows="8"></textarea>
             </div>
+            <div class="mb-6">
+              <div class="g-recaptcha" data-sitekey={config.params.recaptcha_site_key}></div>
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>

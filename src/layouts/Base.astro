@@ -123,6 +123,11 @@ const { title, meta_title, description, image, noindex, canonical } =
 
     <ClientRouter />
 
+    <!-- reCAPTCHA script for contact page -->
+    {Astro.url.pathname === '/contact' && (
+      <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    )}
+
     <!-- author from config.json -->
     <meta name="author" content={config.metadata.meta_author} />
 

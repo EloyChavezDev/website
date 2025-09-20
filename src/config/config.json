@@ -24,6 +24,7 @@
 
   "params": {
     "contact_form_action": "#",
+    "recaptcha_site_key": "YOUR_SITE_KEY",
     "copyright": "Based on a design by Zeon Studio modify and implemnt by EloyChavezDev"
   },
 

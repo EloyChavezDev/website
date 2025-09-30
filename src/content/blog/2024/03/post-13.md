@@ -3,7 +3,7 @@ title: "🔍 Introducción a la informática forense: Un mundo de investigación
 meta_title: ""
 description: "La informática forense, también conocida como ciberinvestigación o análisis forense digital, se ha convertido en una disciplina indispensable en la era digital."
 date: 2024-03-05T00:00:00Z
-image: "/images/Introduccion_informatica_forense.png"
+image: "/images/2024/03/Introduccion_informatica_forense.png"
 categories: ["Ciberseguridad"]
 author: "Eloy Chavez"
 tags: ["informática forense", "ciberseguridad", "investigación digital", "análisis forense", "evidencia digital"]

@@ -3,7 +3,7 @@ title: "Cómo Fortnite me Enseñó que la Constancia es la Clave para Alcanzar N
 meta_title: ""
 description: "En la era digital actual, debemos ver los videojuegos han dejado de ser solo una forma de entretenimiento para convertirse en plataformas de aprendizaje sorprendentes."
 date: 2023-08-29T00:00:00Z
-image: "/images/Fortnite_Educa.png"
+image: "/images/2023/08/Fortnite_Educa.png"
 categories: ["Desarrollo Personal"]
 author: "Eloy Chavez"
 tags: ["videojuegos", "fortnite", "constancia", "desarrollo personal", "aprendizaje"]
@@ -33,4 +33,4 @@ En Fortnite, los jugadores establecen metas tanto a corto como a largo plazo. Pu
 Fortnite, más allá de ser un simple videojuego, puede ser un maestro en lecciones de constancia y perseverancia. A través de su mecánica de juego y su enfoque en el progreso continuo, nos muestra que el camino hacia el éxito no está exento de desafíos, pero que la constancia es la clave para superarlos. Ya sea en el mundo virtual de Fortnite o en nuestra propia vida, la determinación de seguir adelante a pesar de las dificultades es lo que nos lleva a alcanzar nuestras metas. Así que, la próxima vez que te enfrentes a un obstáculo en tu camino, recuerda las lecciones que Fortnite puede ofrecerte: mantén la constancia y estarás un paso más cerca de tus sueños.
 
 #### Si quieres agregarme para jugar mi ID es EloyChavezDev 
-![EloyChavezDev Fortnite](/images/EloyChavezDev_Fortnite.jpg "EloyChavezDev Fortnite")
+![EloyChavezDev Fortnite](/images/2023/08/EloyChavezDev_Fortnite.jpg "EloyChavezDev Fortnite")

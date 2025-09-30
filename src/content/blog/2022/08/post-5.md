@@ -3,7 +3,7 @@ title: "5 Tips para perder el miedo a hablar en público remotamente"
 meta_title: ""
 description: "La vida es un viaje lleno de sorpresas y descubrimientos. A menudo, nos encontramos en una búsqueda constante para encontrar nuestra verdadera pasión, aquella actividad que nos llena de satisfacción y propósito."
 date: 2022-08-27T00:00:00Z
-image: "/images/EloyChavez_platziconf.png"
+image: "/images/2022/08/EloyChavez_platziconf.png"
 categories: ["Oratoria"]
 author: "Eloy Chavez"
 tags: ["hablar en público", "oratoria", "consejos", "platziconf"]
@@ -18,7 +18,7 @@ Te invito a imaginar por un momento el estar frente a una multitud de personas q
 
 Así me sentí yo minutos antes de participar como Speaker en el Open Stage durante esta PlatziConf 2021, pero cuando comencé a hablar todas esas sensaciones desaparecieron rápidamente, logrando transmitir mi mensaje con la misma pasión que siento por ser parte de esta hermosa comunidad de Platzinautas, es así que desde mi experiencia te compartiré "las técnicas secretas" que use para lograrlo.
 
-![Imagen promocional Platzi Conf 2021](/images/platziconf_2021.webp "PlatziConf 2021")
+![Imagen promocional Platzi Conf 2021](/images/2022/08/platziconf_2021.webp "PlatziConf 2021")
 
 ## Tip #1: Organízate ✍🏻
 Ya sea larga o corta tu presentación, es muy importante ordenar todos los elementos de la misma así como su duración. Debes tener bien identificados los tiempos en tu introducción, nudo y desenlace que conforman la Estructura de un discurso exitoso.

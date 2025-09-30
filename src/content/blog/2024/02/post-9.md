@@ -3,7 +3,7 @@ title: "Protegiendo tu Mundo Digital: 10 Consejos Cruciales de Ciberseguridad �
 meta_title: ""
 description: "¡Hola, lectores conscientes de la seguridad en línea! En un mundo cada vez más conectado, la ciberseguridad se vuelve esencial para proteger nuestros datos y mantenernos a salvo en el vasto océano digital. Aquí te presentamos los 10 tips más importantes para fortalecer tu defensa cibernética."
 date: 2024-02-01T00:00:00Z
-image: "/images/Consejos_Cruciales_de_Ciberseguridad.png"
+image: "/images/2024/02/Consejos_Cruciales_de_Ciberseguridad.png"
 categories: ["Ciberseguridad"]
 author: "Eloy Chavez"
 tags: ["ciberseguridad", "protección digital", "privacidad", "seguridad online", "tips"]

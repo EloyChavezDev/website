@@ -3,7 +3,7 @@ title: "El Informe de Atlántico: Un Vistazo Profundo a la Transformación Digit
 meta_title: ""
 description: "América Latina, con sus 660 millones de habitantes, es una región rica en recursos y potencial económico. A pesar de esto, enfrenta desafíos significativos."
 date: 2023-09-22T00:00:00Z
-image: "/images/Atlantico.png"
+image: "/images/2023/09/Atlantico.png"
 categories: ["Tecnología"]
 author: "Eloy Chavez"
 tags: ["tecnología", "América Latina", "transformación digital", "economía", "desarrollo"]

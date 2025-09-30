@@ -3,7 +3,7 @@ title: "📄 Estrategias Efectivas para Simulacros de Ingeniería Social en Empr
 meta_title: ""
 description: "En este artículo, exploraremos estrategias prácticas para llevar a cabo simulacros de ingeniería social que fortalezcan las defensas de tu empresa."
 date: 2024-02-08T00:00:00Z
-image: "/images/Simulacros_Ingenieria_Social_Empresas.png"
+image: "/images/2024/02/Simulacros_Ingenieria_Social_Empresas.png"
 categories: ["Ciberseguridad"]
 author: "Eloy Chavez"
 tags: ["ingeniería social", "simulacros", "ciberseguridad", "empresas", "seguridad"]

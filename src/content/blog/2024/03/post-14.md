@@ -3,7 +3,7 @@ title: "📚 Cybersecurity Glossary: 50 Essential Terms"
 meta_title: ""
 description: "A comprehensive glossary of cybersecurity terms to help you understand and protect yourself from cyber threats."
 date: 2024-03-06T00:00:00Z
-image: "/images/Cybersecurity_Glossary.png"
+image: "/images/2024/03/Cybersecurity_Glossary.png"
 categories: ["Ciberseguridad"]
 author: "Eloy Chavez"
 tags: ["ciberseguridad", "glosario", "terminos", "seguridad"]

@@ -3,7 +3,7 @@ title: "🕵🏻‍♂️ Introducción a la gestión de riesgos y vulnerabilida
 meta_title: ""
 description: "En un mundo cada vez más digitalizado, la seguridad informática se ha convertido en una de las principales preocupaciones tanto para empresas como para usuarios individuales."
 date: 2024-03-03T00:00:00Z
-image: "/images/riesgos_y_vulnerabilidades_informaticas.png"
+image: "/images/2024/03/riesgos_y_vulnerabilidades_informaticas.png"
 categories: ["Ciberseguridad"]
 author: "Eloy Chavez"
 tags: ["ciberseguridad", "riesgos", "vulnerabilidades", "seguridad informática"]

@@ -3,7 +3,7 @@ title: "Ciberseguridad y Privacidad: Pilares Esenciales para la Protección Empr
 meta_title: ""
 description: "🔒 Descubre cómo proteger la privacidad de tu empresa y fortalecer su seguridad en línea."
 date: 2024-02-03T00:00:00Z
-image: "/images/ProteccionEmpresarial.png"
+image: "/images/2024/02/ProteccionEmpresarial.png"
 categories: ["Ciberseguridad"]
 author: "Eloy Chavez"
 tags: ["ciberseguridad", "privacidad", "empresas", "protección de datos", "seguridad informática"]

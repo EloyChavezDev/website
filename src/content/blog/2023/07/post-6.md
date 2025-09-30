@@ -3,7 +3,7 @@ title: "Mi Verdadera Pasión: Enseñar y Transformar Vidas"
 meta_title: ""
 description: "La vida es un viaje lleno de sorpresas y descubrimientos. A menudo, nos encontramos en una búsqueda constante para encontrar nuestra verdadera pasión, aquella actividad que nos llena de satisfacción y propósito."
 date: 2023-07-28T00:00:00Z
-image: "/images/EloyChavezDev_Pasion.png"
+image: "/images/2023/07/EloyChavezDev_Pasion.png"
 categories: ["Educación"]
 author: "Eloy Chavez"
 tags: ["educación", "enseñanza", "desarrollo personal", "pasión"]
@@ -16,7 +16,7 @@ Desde temprana edad, siempre he estado intrigado por la tecnología y su funcion
 
 El momento decisivo ocurrió cuando se me brindó la oportunidad de impartir una conferencia sobre ciberseguridad como parte de la semana de ingenierías. Aunque sentí emoción ante esta posibilidad, también experimenté cierta aprensión. ¿Sería capaz de transmitir mis conocimientos de manera efectiva? ¿Podría conectar con mi audiencia y despertar su interés por este tema aparentemente técnico y complejo?
 
-![Imagen Ciberseguridad](/images/ciberseguridad.jpg "Ciberseguridad")
+![Imagen Ciberseguridad](/images/2023/07/ciberseguridad.jpg "Ciberseguridad")
 
 Decidí prepararme a fondo para la conferencia, investigando nuevas tendencias y estadísticas sobre ciberseguridad, seleccionando ejemplos relevantes y buscando formas de presentar el tema de manera accesible para todos. A medida que profundizaba en la preparación, me di cuenta de que disfrutaba cada momento. No solo estaba enriqueciendo mis propios conocimientos, sino que también estaba emocionado por la idea de compartirlos con otros.
 
@@ -25,7 +25,7 @@ Observar cómo los rostros de los estudiantes se iluminaban cuando explicaba con
 
 La sensación de gratificación que experimenté al finalizar la conferencia fue indescriptible. Me di cuenta de que había descubierto mi verdadera pasión: enseñar a los demás y ayudarles a comprender el mundo digital cada vez más conectado en el que vivimos.
 
-![Imagen Ciberseguridad](/images/EloyChavezDev_Conferencias.jpg "Conferencia impartida en la UCA")
+![Imagen Ciberseguridad](/images/2023/07/EloyChavezDev_Conferencias.jpg "Conferencia impartida en la UCA")
 
 Hoy decidí cultivar mi pasión por la enseñanza. He impartido talleres, charlas y cursos en diversas instituciones y eventos. Cada oportunidad de interactuar con estudiantes y profesionales ansiosos por aprender me impulsa a seguir creciendo y mejorando como educador.
 

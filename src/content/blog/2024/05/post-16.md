@@ -3,7 +3,7 @@ title: "Level 35 Unlocked"
 meta_title: ""
 description: "Al llegar a la mitad de lo que espero sea mi esperanza de vida, hoy celebro 35 años de existencia."
 date: 2024-05-11T00:00:00Z
-image: "/images/Level35.png"
+image: "/images/2024/05/Level35.png"
 categories: ["Reflexión"]
 author: "Eloy Chavez"
 tags: ["reflexión", "cumpleaños", "vida", "gratitud"]

@@ -1,5 +1,5 @@
 ---
-title: " Entendiendo la Importancia de Evaluar Tu Situación Financiera Personal"
+title: "Entendiendo la Importancia de Evaluar Tu Situación Financiera Personal"
 meta_title: ""
 description: "¿Por qué es tan importante este paso? En esta entrada, exploraremos la importancia de evaluar tu situación financiera personal y cómo puedes hacerlo de manera efectiva."
 date: 2024-04-29T00:00:00Z

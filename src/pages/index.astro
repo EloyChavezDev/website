@@ -5,6 +5,7 @@ import { markdownify } from "@/lib/utils/textConverter";
 import CallToAction from "@/partials/CallToAction.astro";
 import Testimonial from "@/partials/Testimonial.astro";
 import BlogCarousel from "@/partials/BlogCarousel.astro";
+import CertificatesCarousel from "@/partials/CertificatesCarousel.astro";
 import type { Button, Feature } from "@/types";
 import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
@@ -124,6 +125,7 @@ const { banner, features } = homepage.data as Homepage;
   <!-- /Features -->
 
   <BlogCarousel />
+  <CertificatesCarousel />
   <Testimonial testimonial={testimonial} />
   <CallToAction call_to_action={call_to_action} />
 </Base>

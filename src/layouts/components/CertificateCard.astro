@@ -2,12 +2,13 @@
 import ImageMod from "./ImageMod.astro";
 import { humanize, slugify } from "@/lib/utils/textConverter";
 
-const { data } = Astro.props;
+const { data, link: customLink } = Astro.props;
 const { title, image, link, tags } = data.data;
+const cardLink = customLink || link;
 ---
 
 <div class="bg-body dark:bg-darkmode-body">
-  <a href={link} target="_blank" rel="noopener noreferrer">
+  <a href={cardLink} target={customLink ? "_self" : "_blank"} rel={customLink ? "" : "noopener noreferrer"}>
     <ImageMod
       class="w-full rounded"
       src={image}

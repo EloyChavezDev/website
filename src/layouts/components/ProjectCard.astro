@@ -3,7 +3,7 @@ import ImageMod from "./ImageMod.astro";
 import { humanize, slugify } from "@/lib/utils/textConverter";
 
 const { data, link: customLink } = Astro.props;
-const { title, image, link, tags, date } = data.data;
+const { title, image, link, tags, description } = data.data;
 const cardLink = customLink || link;
 ---
 
@@ -33,5 +33,5 @@ const cardLink = customLink || link;
       }
     </ul>
   </div>
-  {date && <p class="text-center mt-2 text-sm border-t border-gray-300 dark:border-gray-600 pt-2">{new Intl.DateTimeFormat('es-ES', { day: 'numeric', month: 'long', year: 'numeric' }).format(new Date(date))}</p>}
+  {description && <p class="text-center mt-2 text-sm border-t border-gray-300 dark:border-gray-600 pt-2">{description}</p>}
 </div>

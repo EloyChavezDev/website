@@ -162,6 +162,21 @@ const certificatesCollection = defineCollection({
   }),
 });
 
+// Projects collection schema
+const projectsCollection = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/proyectos" }),
+  schema: z.object({
+    title: z.string(),
+    meta_title: z.string().optional(),
+    description: z.string().optional(),
+    image: z.string().optional(),
+    link: z.string().optional(),
+    tags: z.array(z.string()).default(["others"]),
+    date: z.date().optional(),
+    draft: z.boolean().optional(),
+  }),
+});
+
 // Export collections
 export const collections = {
   // Pages
@@ -172,6 +187,7 @@ export const collections = {
   about: aboutCollection,
   contact: contactCollection,
   certificados: certificatesCollection,
+  proyectos: projectsCollection,
 
   // sections
   ctaSection: ctaSectionCollection,

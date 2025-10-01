@@ -1,7 +1,6 @@
 ---
 import ImageMod from "./ImageMod.astro";
 import { humanize, slugify } from "@/lib/utils/textConverter";
-import dateFormat from "@/lib/utils/dateFormat";
 
 const { data, link: customLink } = Astro.props;
 const { title, image, link, tags, date } = data.data;
@@ -26,7 +25,7 @@ const cardLink = customLink || link;
       {
         tags.map((tag: string) => (
           <li class="mr-2 mb-1">
-            <a href={`/certificados/tags/${slugify(tag)}`} class="badge badge-outline border-2 border-black dark:border-white">
+            <a href={`/proyectos/tags/${slugify(tag)}`} class="badge badge-outline border-2 border-black dark:border-white">
               {humanize(tag)}
             </a>
           </li>

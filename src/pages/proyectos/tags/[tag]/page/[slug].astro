@@ -1,0 +1,74 @@
+---
+import ProjectCard from "@/components/ProjectCard.astro";
+import Pagination from "@/components/Pagination.astro";
+import Base from "@/layouts/Base.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+import taxonomyFilter from "@/lib/utils/taxonomyFilter";
+import PageHeader from "@/partials/PageHeader.astro";
+import { humanize } from "@/lib/utils/textConverter";
+
+export async function getStaticPaths() {
+  const PROJECTS_FOLDER = "proyectos";
+  const projects = await getSinglePage(PROJECTS_FOLDER);
+  const PAGINATION = 6;
+
+  // Get unique tags
+  const allTags = new Set<string>();
+  projects.forEach((project: any) => {
+    project.data.tags?.forEach((tag: string) => allTags.add(tag));
+  });
+
+  const paths = [];
+  for (const tag of allTags) {
+    const filterByTags = taxonomyFilter(projects, "tags", tag);
+    const totalPages = Math.ceil(filterByTags.length / PAGINATION);
+
+    for (let i = 1; i < totalPages; i++) {
+      paths.push({
+        params: {
+          tag: tag,
+          slug: (i + 1).toString(),
+        },
+      });
+    }
+  }
+  return paths;
+}
+
+const { tag, slug } = Astro.params;
+
+// get projects by tag
+const PROJECTS_FOLDER = "proyectos";
+const projects = await getSinglePage(PROJECTS_FOLDER);
+const filterByTags = taxonomyFilter(projects, "tags", tag!);
+const sortedProjects = sortByDate(filterByTags);
+const PAGINATION = 6;
+const totalPages = Math.ceil(filterByTags.length / PAGINATION);
+const currentPage = slug && !isNaN(Number(slug)) ? Number(slug) : 1;
+const indexOfLastProject = currentPage * PAGINATION;
+const indexOfFirstProject = indexOfLastProject - PAGINATION;
+const currentProjects = sortedProjects.slice(indexOfFirstProject, indexOfLastProject);
+---
+
+<Base title={humanize(tag!)}>
+  <PageHeader title={humanize(tag!)} />
+  <div class="section-sm pb-0">
+    <div class="container">
+      <div class="row">
+        {
+          currentProjects.map((project) => (
+            <div class="mb-14 md:col-6 lg:col-4">
+              <ProjectCard data={project} />
+            </div>
+          ))
+        }
+      </div>
+      <Pagination
+        section={`proyectos/tags/${tag}`}
+        currentPage={currentPage}
+        totalPages={totalPages}
+      />
+    </div>
+  </div>
+</Base>

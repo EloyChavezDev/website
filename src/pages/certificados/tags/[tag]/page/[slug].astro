@@ -1,0 +1,74 @@
+---
+import CertificateCard from "@/components/CertificateCard.astro";
+import Pagination from "@/components/Pagination.astro";
+import Base from "@/layouts/Base.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+import taxonomyFilter from "@/lib/utils/taxonomyFilter";
+import PageHeader from "@/partials/PageHeader.astro";
+import { humanize } from "@/lib/utils/textConverter";
+
+export async function getStaticPaths() {
+  const CERTIFICATES_FOLDER = "certificados";
+  const certificates = await getSinglePage(CERTIFICATES_FOLDER);
+  const PAGINATION = 6;
+
+  // Get unique tags
+  const allTags = new Set<string>();
+  certificates.forEach((cert: any) => {
+    cert.data.tags?.forEach((tag: string) => allTags.add(tag));
+  });
+
+  const paths = [];
+  for (const tag of allTags) {
+    const filterByTags = taxonomyFilter(certificates, "tags", tag);
+    const totalPages = Math.ceil(filterByTags.length / PAGINATION);
+
+    for (let i = 1; i < totalPages; i++) {
+      paths.push({
+        params: {
+          tag: tag,
+          slug: (i + 1).toString(),
+        },
+      });
+    }
+  }
+  return paths;
+}
+
+const { tag, slug } = Astro.params;
+
+// get certificates by tag
+const CERTIFICATES_FOLDER = "certificados";
+const certificates = await getSinglePage(CERTIFICATES_FOLDER);
+const filterByTags = taxonomyFilter(certificates, "tags", tag!);
+const sortedCertificates = sortByDate(filterByTags);
+const PAGINATION = 6;
+const totalPages = Math.ceil(filterByTags.length / PAGINATION);
+const currentPage = slug && !isNaN(Number(slug)) ? Number(slug) : 1;
+const indexOfLastCert = currentPage * PAGINATION;
+const indexOfFirstCert = indexOfLastCert - PAGINATION;
+const currentCertificates = sortedCertificates.slice(indexOfFirstCert, indexOfLastCert);
+---
+
+<Base title={humanize(tag!)}>
+  <PageHeader title={humanize(tag!)} />
+  <div class="section-sm pb-0">
+    <div class="container">
+      <div class="row">
+        {
+          currentCertificates.map((certificate) => (
+            <div class="mb-14 md:col-6 lg:col-4">
+              <CertificateCard data={certificate} />
+            </div>
+          ))
+        }
+      </div>
+      <Pagination
+        section={`certificados/tags/${tag}`}
+        currentPage={currentPage}
+        totalPages={totalPages}
+      />
+    </div>
+  </div>
+</Base>

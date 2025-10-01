@@ -1,6 +1,6 @@
 ---
 import ImageMod from "./ImageMod.astro";
-import { humanize } from "@/lib/utils/textConverter";
+import { humanize, slugify } from "@/lib/utils/textConverter";
 
 const { data } = Astro.props;
 const { title, image, link, tags } = data.data;
@@ -22,7 +22,9 @@ const { title, image, link, tags } = data.data;
     {
       tags.map((tag: string) => (
         <li class="mr-2 mb-1">
-          <span class="badge badge-outline">{humanize(tag)}</span>
+          <a href={`/certificados/tags/${slugify(tag)}`} class="badge badge-outline">
+            {humanize(tag)}
+          </a>
         </li>
       ))
     }

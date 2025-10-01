@@ -1,0 +1,54 @@
+---
+import CertificateCard from "@/components/CertificateCard.astro";
+import Pagination from "@/components/Pagination.astro";
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+import PageHeader from "@/partials/PageHeader.astro";
+import type { CollectionEntry } from "astro:content";
+import { getEntry } from "astro:content";
+
+const CERTIFICATES_FOLDER = "certificados";
+
+const certificatesIndex = (await getEntry(
+  CERTIFICATES_FOLDER,
+  "-index"
+)) as CollectionEntry<"certificados">;
+const certificates = await getSinglePage(CERTIFICATES_FOLDER);
+const sortedCertificates = sortByDate(certificates);
+const totalPages: number = Math.ceil(certificates.length / config.settings.pagination);
+const currentCertificates = sortedCertificates.slice(0, config.settings.pagination);
+---
+
+<Base
+  title={certificatesIndex.data.title}
+  meta_title={certificatesIndex.data.meta_title}
+  image={certificatesIndex.data.image}
+  description={certificatesIndex.data.description}
+>
+  <PageHeader title={certificatesIndex?.data.title} />
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <!-- certificates -->
+        <div class="col-12">
+          <div class="row">
+            {
+              currentCertificates.map((certificate) => (
+                <div class="mb-14 md:col-6 lg:col-4">
+                  <CertificateCard data={certificate} />
+                </div>
+              ))
+            }
+          </div>
+          <Pagination
+            section={CERTIFICATES_FOLDER}
+            currentPage={1}
+            totalPages={totalPages}
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

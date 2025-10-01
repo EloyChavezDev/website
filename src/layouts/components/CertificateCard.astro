@@ -1,0 +1,19 @@
+---
+import ImageMod from "./ImageMod.astro";
+
+const { data } = Astro.props;
+const { title, image, link } = data.data;
+---
+
+<div class="bg-body dark:bg-darkmode-body">
+  <a href={link} target="_blank" rel="noopener noreferrer">
+    <ImageMod
+      class="w-full rounded"
+      src={image}
+      alt={title}
+      width={445}
+      height={230}
+      format="webp"
+    />
+  </a>
+</div>

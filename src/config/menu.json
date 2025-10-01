@@ -13,6 +13,10 @@
       "url": "/blog"
     },
     {
+      "name": "Certificados",
+      "url": "/certificados"
+    },
+    {
       "name": "Pages",
       "url": "",
       "hasChildren": true,

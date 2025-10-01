@@ -147,6 +147,20 @@ const testimonialSectionCollection = defineCollection({
   }),
 });
 
+// Certificates collection schema
+const certificatesCollection = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/certificados" }),
+  schema: z.object({
+    title: z.string(),
+    meta_title: z.string().optional(),
+    description: z.string().optional(),
+    image: z.string(),
+    link: z.string(),
+    date: z.date().optional(),
+    draft: z.boolean().optional(),
+  }),
+});
+
 // Export collections
 export const collections = {
   // Pages
@@ -156,6 +170,7 @@ export const collections = {
   pages: pagesCollection,
   about: aboutCollection,
   contact: contactCollection,
+  certificados: certificatesCollection,
 
   // sections
   ctaSection: ctaSectionCollection,

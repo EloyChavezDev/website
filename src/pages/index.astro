@@ -6,6 +6,7 @@ import CallToAction from "@/partials/CallToAction.astro";
 import Testimonial from "@/partials/Testimonial.astro";
 import BlogCarousel from "@/partials/BlogCarousel.astro";
 import CertificatesCarousel from "@/partials/CertificatesCarousel.astro";
+import ProjectsCarousel from "@/partials/ProjectsCarousel.astro";
 import type { Button, Feature } from "@/types";
 import type { CollectionEntry } from "astro:content";
 import { getEntry } from "astro:content";
@@ -124,6 +125,7 @@ const { banner, features } = homepage.data as Homepage;
   }
   <!-- /Features -->
 
+  <ProjectsCarousel />
   <BlogCarousel />
   <CertificatesCarousel />
   <Testimonial testimonial={testimonial} />

@@ -1,0 +1,31 @@
+---
+import ProjectCard from "@/components/ProjectCard.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+
+const projects = await getSinglePage("proyectos");
+const sortedProjects = sortByDate(projects);
+const latestProjects = sortedProjects.slice(0, 3);
+---
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      <div class="mx-auto mb-12 text-center md:col-10 lg:col-8 xl:col-6">
+        <h2 class="mb-4">Últimos Proyectos</h2>
+        <p>Descubre mis proyectos más recientes.</p>
+      </div>
+      <div class="col-12">
+        <div class="row">
+          {
+            latestProjects.map((project) => (
+              <div class="mb-14 md:col-6 lg:col-4">
+                <ProjectCard data={project} />
+              </div>
+            ))
+          }
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

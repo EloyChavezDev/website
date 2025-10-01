@@ -156,6 +156,7 @@ const certificatesCollection = defineCollection({
     description: z.string().optional(),
     image: z.string().optional(),
     link: z.string().optional(),
+    tags: z.array(z.string()).default(["others"]),
     date: z.date().optional(),
     draft: z.boolean().optional(),
   }),

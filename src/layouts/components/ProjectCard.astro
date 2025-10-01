@@ -23,13 +23,16 @@ const cardLink = customLink || link;
     <strong>Tags:</strong>
     <ul class="inline-flex justify-center flex-wrap ml-1">
       {
-        tags.map((tag: string) => (
-          <li class="mr-2 mb-1">
-            <a href={`/proyectos/tags/${slugify(tag)}`} class="badge badge-outline border-2 border-black dark:border-white">
-              {humanize(tag)}
-            </a>
-          </li>
-        ))
+        tags.map((tag: string) => {
+          const colorClass = tag === "Activo" ? "text-green-600" : tag === "Inactivo" ? "text-red-600" : "";
+          return (
+            <li class="mr-2 mb-1">
+              <a href={`/proyectos/tags/${slugify(tag)}`} class={`font-semibold ${colorClass}`}>
+                {humanize(tag)}
+              </a>
+            </li>
+          );
+        })
       }
     </ul>
   </div>

@@ -42,7 +42,7 @@ const { banner, features } = homepage.data as Homepage;
 
 <Base>
   <!-- Banner -->
-  <section class="section pt-14">
+  <section class="section pt-14 py-12 xl:py-16">
     <div class="container">
       <div class="row justify-center">
         <div class="col-10 lg:col-8 md:col-10 mb-8 text-center">
@@ -87,7 +87,7 @@ const { banner, features } = homepage.data as Homepage;
   <!-- Features -->
   {
     features.map((feature, index: number) => (
-      <section class={`section-sm ${index % 2 === 0 && "bg-gradient"}`}>
+      <section class={`section-sm py-8 xl:py-12 ${index % 2 === 0 && "bg-gradient"}`}>
         <div class="container">
           <div class="row items-center justify-between">
             <div

@@ -1,10 +1,10 @@
 /* section style */
 .section {
-  @apply mb-28;
+  @apply mb-14;
 }
 
 .section-sm {
-  @apply mb-28;
+  @apply mb-14;
 }
 
 /* container */

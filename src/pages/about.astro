@@ -1,6 +1,7 @@
 ---
 import ImageMod from "@/components/ImageMod.astro";
 import Base from "@/layouts/Base.astro";
+import TimeLineElement from "@/components/TimeLineElement.astro";
 import { markdownify } from "@/lib/utils/textConverter";
 import type { CollectionEntry } from "astro:content";
 import { getEntry, render } from "astro:content";
@@ -36,6 +37,152 @@ const { title, description, meta_title, image } = about.data;
           <div class="content">
             <Content />
           </div>
+
+          <div class="mb-5">
+            <div class="text-3xl w-full font-bold">Experiencia</div>
+          </div>
+
+          <div class="time-line-container mb-10">
+            <TimeLineElement
+              title="Docente en Universidad Continente Americano"
+              subtitle="Desde Enero 2024"
+            >
+            En mi rol como docente, imparto con pasión y dedicación clases de Desarrollo de Aplicaciones Sobre Internet, donde guío a los estudiantes en el dominio de tecnologías clave para diseñar y construir aplicaciones web innovadoras y funcionales.
+            Además, lidero la instrucción en Organización de Centros de Cómputo, proporcionando a los alumnos las habilidades necesarias para gestionar eficientemente recursos y servicios de tecnología de la información, asegurando así un entorno informático óptimo y seguro.
+            Mi enfoque educativo se centra en fomentar el pensamiento crítico, la creatividad y el dominio técnico para preparar a los estudiantes para los desafíos del mundo digital actual.
+            </TimeLineElement>
+            <TimeLineElement
+              title="Community Manager en Instituto Americano Plantel Celaya"
+              subtitle="Desde Marzo 2023 Jornada Parcial"
+            >
+            Como Community Manager he cultivado una sólida experiencia en la gestión de comunidades en línea. Mi papel ha abarcado desde la creación de contenido atractivo hasta la interacción activa con la audiencia, manteniendo un ambiente digital dinámico y en constante crecimiento. </br>
+            He adquirido habilidades de comunicación efectiva, estrategias de contenido adaptadas a diferentes plataformas y la capacidad de analizar métricas para optimizar la participación y el alcance.
+            Mi dedicación a la construcción de relaciones sólidas y la promoción de la marca me ha permitido contribuir de manera significativa al fortalecimiento de la presencia en línea de la institución.
+            </TimeLineElement>
+            <TimeLineElement
+              title="Auxiliar de Sistemas en Universidad Continente Americano"
+              subtitle="Desde Junio del 2020"
+            >
+            He desarrollado un sólido entendimiento de la infraestructura tecnológica, realizando tareas de soporte técnico, mantenimiento de hardware y software asi como resolución de problemas. </br>
+            He demostrado habilidades en la configuración de redes, instalación de software y atención eficiente a usuarios, contribuyendo a un entorno informático eficaz y fluido.
+            </TimeLineElement>
+            <TimeLineElement
+              title="Assiociate en Platzi"
+              subtitle="Desde Noviembre del 2021 hasta Agosto del 2022"
+            >
+            Involucrado en el aseguramiento de calidad de cursos, resolución de preguntas principalmente técnicas de estudiantes sobre los cursos y participación activa en pruebas beta. </br>
+            Desarrollé competencias en evaluación rigurosa, comunicación efectiva y detección temprana de problemas, contribuyendo al continuo mejoramiento de la experiencia educativa en línea.
+            </TimeLineElement>
+          </div>
+
+          <div class="mb-5">
+            <div class="text-3xl w-full font-bold">Conferencias impartidas</div>
+          </div>
+
+          <div class="time-line-container grid gap-4 mb-10">
+            <TimeLineElement
+              title="Taller de Ciberseguridad"
+              subtitle="2023 - Universidad Continente Americano"
+            >
+            Enseñe conocimientos esenciales sobre protección de datos y sistemas, abordando amenazas cibernéticas comunes y técnicas de prevención. </br>
+            Explorando conceptos de seguridad en redes, prácticas de higiene digital, métodos de detección de ataques y pautas para mantener entornos en línea seguros, empoderando a los participantes con habilidades para salvaguardar la información y la privacidad.
+            </TimeLineElement>
+            <TimeLineElement
+              title="Conferencia Seguridad en Redes Sociales"
+              subtitle="2023 - Universidad Continente Americano"
+              >
+            Ejemplifique los riesgos y desafíos de la interacción en línea, brindando consejos prácticos para proteger la privacidad y la identidad digital. </br>
+            Mostrando estrategias para identificar y prevenir amenazas como el phishing y el robo de identidad, además de abordar la gestión de la configuración de privacidad en diferentes plataformas. </br>
+            A través de casos reales y mejores prácticas, proporcionaré a los asistentes las herramientas necesarias para navegar por las redes sociales de manera segura y responsable.
+            </TimeLineElement>
+            <TimeLineElement
+            title="Taller de Marca Personal"
+            subtitle="2022 - Universidad Continente Americano"
+          >
+          Aprendimos a definir y desarrollar una identidad única y auténtica. Exploraremos la importancia de la narrativa personal, la creación de contenido estratégico y la optimización de perfiles en línea. </br>
+          Adicionalmente, abordaremos técnicas de networking, comunicación efectiva y gestión de reputación, para que los participantes puedan construir una marca sólida y destacar en entornos profesionales y digitales.
+          </TimeLineElement>
+          <TimeLineElement
+            title="Talk: Construyendo Conocimiento como Armar una PC"
+            subtitle="2021 - PlatziConf"
+            >
+            En esta charla, explore cómo el proceso de armar una PC se asemeja sorprendentemente al aprendizaje efectivo.</br>
+            Desglosé los pasos esenciales para construir conocimiento sólido, desde la selección de componentes hasta la resolución de problemas. </br>
+            A través de analogías creativas, compartiré estrategias prácticas para investigar, comprender, ensamblar y optimizar información, brindando a los asistentes un enfoque inspirador y tangible para adquirir nuevas habilidades y conceptos.
+          </TimeLineElement>
+          </div>
+
+          <div class="mb-5">
+            <div class="text-3xl w-full font-bold">Formación</div>
+          </div>
+
+          <div class="time-line-container grid gap-4 mb-10">
+            <TimeLineElement
+              title="Platzi"
+              subtitle="2016-2024"
+            >
+              Aprendí programación, ciberseguridad, diseño gráfico y desarrollo web, así como marketing digital, negocios en línea y habilidades de emprendimiento, a través de cursos interactivos y expertos de la industria.
+            </TimeLineElement>
+            <TimeLineElement
+              title="UNITESBA"
+              subtitle="2010-2014"
+              >
+              Obtuve comprensión integral de la gestión empresarial, finanzas y liderazgo. </br>
+              Asi como habilidades para tomar decisiones estratégicas, gestionar equipos y optimizar recursos, preparándote para roles en diversos sectores y contribuyendo tanto al crecimiento como éxito de organizaciones en el dinámico entorno empresarial.
+            </TimeLineElement>
+          </div>
+
+          <div class="mb-5">
+            <div class="text-3xl w-full font-bold">Skills</div>
+          </div>
+
+          <div class="mb-5">
+          <ul class="list-disc md:columns-4 columns-3 mx-6">
+            <li>Enfoque Estratégico</li>
+            <li>Innovación y Creatividad</li>
+            <li>Resolución de Problemas</li>
+            <li>Liderazgo y Colaboración</li>
+            <li>Habilidades Digitales</li>
+            <li>Comunicación Efectiva</li>
+            <li>Análisis y Evaluación</li>
+            <li>Adaptabilidad</li>
+            <li>Pasión y Motivación</li>
+          </ul>
+          </div>
+
+          <div class="mb-5">
+            <div class="text-3xl w-full font-bold">Lenguajes</div>
+          </div>
+
+          <div class="mb-5">
+          <ul class="list-disc md:columns-4 columns-3 mx-6">
+            <li>Español - Nativo</li>
+            <li>Ingles - B1</li>
+          </ul>
+          </div>
+
+          <div class="mb-5">
+            <div class="text-3xl w-full font-bold">Formación Certificada</div>
+          </div>
+
+          <ul class="list-disc mx-6 mb-10 grid gap-2">
+            <li>
+              <b><a href="https://platzi.com/p/EloyChavezDev/ruta/14992-ciberseguridad-personal/diploma/detalle/" target="_blank" style="color:darkgreen;">Ciberseguridad Personal</a></b>
+            </li>
+            <li>
+              <b><a href="https://platzi.com/p/EloyChavezDev/ruta/1-fundamentos-programacion/diploma/detalle/" target="_blank" style="color:darkgreen;">Fundamentos de Programación</a></b>
+            </li>
+          </ul>
+
+          <div class="mb-5">
+            <div class="text-3xl w-full font-bold">Cursos Certificados</div>
+          </div>
+
+          <ul class="list-disc mx-6 mb-10 grid gap-2">
+            <li>
+              <b><a href="https://platzi.com/p/EloyChavezDev/" target="_blank" style="color:darkgreen;">96 Cursos en Platzi</a></b>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

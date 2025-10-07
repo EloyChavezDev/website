@@ -6,7 +6,7 @@ const { title, img, desc, url, badge, target = "_blank", tags } = Astro.props;
 
 <div class="rounded-lg bg-body dark:bg-darkmode-body hover:shadow-xl transition ease-in-out hover:scale-[102%]">
   <a href={url} target={target}>
-    <div class="hero-content flex-col md:flex-row">
+    <div class="hero-content flex-col md:flex-row items-center">
       {
         img && (
           <ImageMod
@@ -19,7 +19,7 @@ const { title, img, desc, url, badge, target = "_blank", tags } = Astro.props;
           />
         )
       }
-      <div class="grow w-full">
+      <div class="grow w-full text-left">
         <h1 class="text-xl font-bold">
           {title}
           {badge && <div class="badge badge-primary mx-2">{badge}</div>}

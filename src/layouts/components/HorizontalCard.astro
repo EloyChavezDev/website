@@ -1,0 +1,41 @@
+---
+import ImageMod from "./ImageMod.astro";
+
+const { title, img, desc, url, badge, target = "_blank", tags } = Astro.props;
+---
+
+<div class="rounded-lg bg-body dark:bg-darkmode-body hover:shadow-xl transition ease-in-out hover:scale-[102%]">
+  <a href={url} target={target}>
+    <div class="hero-content flex-col md:flex-row">
+      {
+        img && (
+          <ImageMod
+            src={img}
+            width={750}
+            height={422}
+            alt={title}
+            class="max-w-full md:max-w-[13rem] rounded-lg"
+            format="webp"
+          />
+        )
+      }
+      <div class="grow w-full">
+        <h1 class="text-xl font-bold">
+          {title}
+          {badge && <div class="badge badge-primary mx-2">{badge}</div>}
+        </h1>
+        <p class="py-1 text-1xl">{desc}</p>
+        <div class="card-actions justify-end">
+          {
+            tags &&
+              tags.map((tag: string) => (
+                <a href={`/tag/${tag}`} class="badge badge-outline hover:bg-light dark:hover:bg-darkmode-light">
+                  {tag}
+                </a>
+              ))
+          }
+        </div>
+      </div>
+    </div>
+  </a>
+</div>

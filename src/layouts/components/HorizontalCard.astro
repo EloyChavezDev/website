@@ -11,10 +11,10 @@ const { title, img, desc, url, badge, target = "_blank", tags } = Astro.props;
         img && (
           <ImageMod
             src={img}
-            width={750}
-            height={422}
+            width={200}
+            height={200}
             alt={title}
-            class="max-w-full md:max-w-[13rem] rounded-lg"
+            class="w-48 h-48 md:w-52 md:h-52 rounded-lg object-cover"
             format="webp"
           />
         )

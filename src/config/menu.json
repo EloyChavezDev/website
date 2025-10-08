@@ -9,35 +9,35 @@
       "url": "/about"
     },
     {
+      "name": "Proyectos",
+      "url": "/proyectos"
+    },
+    {
       "name": "Blog",
-      "url": "/blog"
+      "url": "/blog",
+      "hasChildren": true,
+      "children": [
+        {
+          "name": "Categorias",
+          "url": "/categories"
+        },
+        {
+          "name": "Etiquetas",
+          "url": "/tags"
+        }
+      ]
     },
     {
       "name": "Certificados",
       "url": "/certificados"
     },
     {
-      "name": "Proyectos",
-      "url": "/proyectos"
-    },
-    {
-      "name": "Pages",
-      "url": "",
-      "hasChildren": true,
-      "children": [
-        {
-          "name": "Categories",
-          "url": "/categories"
-        },
-        {
-          "name": "Tags",
-          "url": "/tags"
-        }
-      ]
-    },
-    {
-      "name": "Contact",
+      "name": "Contacto",
       "url": "/contact"
+    },
+    {
+      "name": "Social",
+      "url": "/sigueme"
     }
   ],
   "footer": [

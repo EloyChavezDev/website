@@ -1,24 +1,44 @@
 {
   "main": [
     {
-      "name": "facebook",
-      "icon": "FaFacebook",
-      "link": "https://www.facebook.com/"
+      "name": "github",
+      "icon": "FaGithub",
+      "link": "https://github.com/EloyChavezDev"
+    },
+    {
+      "name": "twitch",
+      "icon": "FaTwitch",
+      "link": "https://www.twitch.tv/eloychavezdev"
+    },
+    {
+      "name": "youtube",
+      "icon": "FaYoutube",
+      "link": "https://www.youtube.com/@eloychavezdev"
     },
     {
       "name": "twitter",
       "icon": "FaTwitter",
-      "link": "https://twitter.com/"
+      "link": "https://twitter.com/EloyChavezDev"
     },
     {
-      "name": "github",
-      "icon": "FaGithub",
-      "link": "https://www.github.com/"
+      "name": "threads",
+      "icon": "FaThreads",
+      "link": "https://www.threads.net/@eloychavezdev"
     },
     {
       "name": "linkedin",
       "icon": "FaLinkedin",
-      "link": "https://www.linkedin.com/"
+      "link": "https://www.linkedin.com/in/eloychavezdev/"
+    },
+    {
+      "name": "tiktok",
+      "icon": "FaTiktok",
+      "link": "https://www.tiktok.com/@eloychavezdev"
+    },
+    {
+      "name": "instagram",
+      "icon": "FaInstagram",
+      "link": "https://www.instagram.com/eloychavezdev/"
     }
   ]
 }

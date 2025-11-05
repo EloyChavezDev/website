@@ -1,0 +1,75 @@
+---
+import ProjectCard from "@/components/ProjectCard.astro";
+import Pagination from "@/components/Pagination.astro";
+import config from "@/config/config.json";
+import Base from "@/layouts/Base.astro";
+import { getSinglePage } from "@/lib/contentParser.astro";
+import { sortByDate } from "@/lib/utils/sortFunctions";
+import PageHeader from "@/partials/PageHeader.astro";
+import type { CollectionEntry } from "astro:content";
+import { getEntry } from "astro:content";
+
+export async function getStaticPaths() {
+  const PROJECTS_FOLDER = "proyectos";
+  const projects = await getSinglePage(PROJECTS_FOLDER);
+  const sortedProjects = sortByDate(projects);
+  const totalPages: number = Math.ceil(projects.length / config.settings.pagination);
+
+  const paths = [];
+  for (let i = 1; i < totalPages; i++) {
+    paths.push({
+      params: {
+        slug: (i + 1).toString(),
+      },
+    });
+  }
+  return paths;
+}
+
+const { slug } = Astro.params;
+
+const PROJECTS_FOLDER = "proyectos";
+const projectsIndex = (await getEntry(
+  PROJECTS_FOLDER,
+  "-index"
+)) as CollectionEntry<"proyectos">;
+const projects = await getSinglePage(PROJECTS_FOLDER);
+const sortedProjects = sortByDate(projects);
+const totalPages: number = Math.ceil(projects.length / config.settings.pagination);
+const currentPage = slug && !isNaN(Number(slug)) ? Number(slug) : 1;
+const indexOfLastProject = currentPage * config.settings.pagination;
+const indexOfFirstProject = indexOfLastProject - config.settings.pagination;
+const currentProjects = sortedProjects.slice(indexOfFirstProject, indexOfLastProject);
+---
+
+<Base
+  title={projectsIndex.data.title}
+  meta_title={projectsIndex.data.meta_title}
+  image={projectsIndex.data.image}
+  description={projectsIndex.data.description}
+>
+  <PageHeader title={projectsIndex?.data.title} />
+  <section class="section">
+    <div class="container">
+      <div class="row">
+        <!-- projects -->
+        <div class="col-12">
+          <div class="row">
+            {
+              currentProjects.map((project) => (
+                <div class="mb-14 md:col-6 lg:col-4">
+                  <ProjectCard data={project} />
+                </div>
+              ))
+            }
+          </div>
+          <Pagination
+            section={PROJECTS_FOLDER}
+            currentPage={currentPage}
+            totalPages={totalPages}
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

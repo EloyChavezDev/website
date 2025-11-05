@@ -25,7 +25,7 @@ const { title, description, meta_title, image } = about.data;
             image && (
               <ImageMod
                 class="mx-auto mb-6 rounded-lg"
-                src={image}
+                src="/images/Profile.jpg"
                 width={200}
                 height={200}
                 alt={title}
@@ -33,9 +33,9 @@ const { title, description, meta_title, image } = about.data;
               />
             )
           }
-          <h2 set:html={markdownify(title)} class="h3 mb-6" />
+          <h2>👋🏻 Hola, mi nombre es Eloy Chavez</h2>
           <div class="content">
-            <Content />
+            <p>Apasionado tecnólogo y creador digital que fusiona la innovación con la creatividad para transformar desafíos en oportunidades a través de soluciones digitales impactantes. Mi enfoque radica en emplear la tecnología como herramienta para generar un impacto significativo en proyectos diversos. Con un historial probado de éxito en la resolución de problemas, mi objetivo es impulsar la excelencia en cada proyecto que emprendo.</p>
           </div>
 
           <div class="text-left">

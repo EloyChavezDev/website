@@ -1,9 +1,9 @@
 ---
-title: "Hey, I am John Doe!"
+title: "👋🏻 Hola, mi nombre es Eloy Chavez"
 meta_title: "About"
 description: "this is meta description"
-image: "/images/avatar.png"
+image: "/images/Profile.jpg"
 draft: false
 ---
 
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illum nesciunt commodi vel nisi ut alias excepturi ipsum, totam, labore tempora, odit ex iste tempore sed. Fugit voluptatibus perspiciatis assumenda nulla ad nihil, omnis vel, doloremque sit quam autem optio maiores, illum eius facilis et quo consectetur provident dolor similique! Enim voluptatem dicta expedita veritatis repellat dolorum impedit, provident quasi at.
+Apasionado tecnólogo y creador digital que fusiona la innovación con la creatividad para transformar desafíos en oportunidades a través de soluciones digitales impactantes. Mi enfoque radica en emplear la tecnología como herramienta para generar un impacto significativo en proyectos diversos. Con un historial probado de éxito en la resolución de problemas, mi objetivo es impulsar la excelencia en cada proyecto que emprendo.

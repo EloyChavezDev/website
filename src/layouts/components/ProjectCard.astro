@@ -10,11 +10,11 @@ const cardLink = customLink || link;
 <div class="bg-body dark:bg-darkmode-body">
   <a href={cardLink} target={customLink ? "_self" : "_blank"} rel={customLink ? "" : "noopener noreferrer"}>
     <ImageMod
-      class="w-full rounded"
+      class="w-full h-56 rounded object-cover"
       src={image}
       alt={title}
       width={445}
-      height={230}
+      height={224}
       format="webp"
     />
   </a>
